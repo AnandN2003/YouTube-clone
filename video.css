@@ -1,0 +1,68 @@
+.thumbnail{
+    width:100%;
+    display:block;/*there are 3 types of display 1.displayblock 2.inline block 3.inline element
+    this display block takes up the whole space of the entire line whereas inline block
+    takes only the space needed for the content*/
+
+}
+.video-title{
+    font-weight: bold;
+}
+.video-author{
+    color:grey;
+    margin-top: 3px;
+}
+.video-status{
+    color:grey;
+    margin-top:3px ;
+}
+.video-preview{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.channel-picture{
+    display:inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.video-info{
+    display: inline-block;
+    width: 200px;
+}
+.profile-pic{
+    width: 40px;
+    border-radius: 50px;
+}   
+.thumbnail-row{
+    margin-bottom: 12px;
+}
+.video-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:15px;
+    row-gap: 40px;
+}
+@media (max-width: 600px)
+{
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:999px)
+{
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
